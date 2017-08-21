@@ -1,0 +1,892 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+<title></title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+
+function tick(){
+  var date=new Date()
+  window.setTimeout("tick()",1000);
+  nowclock.innerHTML="今天是："+date.toLocaleString();
+ }
+  
+window.onload=function(){
+    tick();
+ }
+  
+</script>
+</head>
+
+<body>
+		<!-- 头部-->
+      <div class="headbj">
+        <div class="gWidth head clearfix">
+        
+        <div id="nowclock" class="lt shijian">
+       今天是：2010年01月01日 
+        </div>
+  
+  
+        	<div class="rg rt">
+            		 <p class="rt"><a href="">游学项目</a><span>|</span><a href=""> 语言培训</a><span>|</span><a href="">专业选择</a><span>|</span><a href="">留学生活</a><span>|</span><a class="hong"href="">人才招聘</a></p>
+			</div>
+           
+        </div>
+ 
+       </div>
+       
+       
+     <div class="logobj">
+     
+            <div class="logo clearfix gWidth">
+            
+              <a href="index.html"><img class="lt" src="images/logo1.png" alt=""></a>
+                 
+          
+               			     
+                <div class="sou rt">
+                  <span class="zhan">站内搜索</span><input type="text" placeholder="请输入要查询的关键词"><span class="suo"><a href="#">搜索</a></span>
+                 </div>
+                   
+                		 <div class="nav rt">
+                 
+                    
+                      <li><a href="anli.html">留学热点<p>Hot Spots</p></a></li>
+    <li class="lala"><a href="#">合作大学<p>University</p></a> <div class="dian">
+                  
+                    <a href="#">美国</a>
+                    <a href="#">英国</a>
+                    <a href="#">加拿大</a>
+                    <a href="#">澳大利亚</a>
+                    <a href="#">新西兰</a>
+                    <a href="#">韩国</a>
+                    <a href="#">日本</a>
+                  
+                 </div> </li>
+                     
+                     
+                      <li><a href="hezuo.html">留学生活<p>Hot Spots</p> </a></li>
+                      <li><a href="tuwen.html">留学申请<p>Hot Spots</p></a></li>
+                      <li><a href="tuwen.html">语言培训<p>Hot Spots</p></a></li>
+                      <li><a href="wenzhang.html">最新项目<p>Hot Spots</p></a></li>
+                      <li><a href="#">关于我们 <p>Hot Spots</p></a></li> 
+                   <li class="ai"><a href="#">联系我们<p>Hot Spots</p></a></li>                   
+                     
+                   
+                   
+                  
+                </div>
+
+            </div>
+            
+           
+     </div>   
+       
+       
+        <!-- banner-->
+        
+    <div class="bannerbox">
+        <div class="banner clearfix ">
+          <img src="images/banner.png">
+        </div>
+    </div> 
+    
+    
+    <div class="cenner clearfix gWidth">
+       <div class="cenner1 ">
+        <span>选择河北农大留学的理由</span>
+        <p>Selected Reasons</p>
+       </div>
+        
+        
+        <div class="kuai">
+        
+        <p><a href="#">理由一</a></p>
+        
+        </div>	
+        
+        
+         <div class="kuai2 kuai">
+        
+        <p><a href="#">理由二</a></p>
+        
+        </div>	
+        
+         <div class="kuai3 kuai">
+        
+        <p><a href="#">选择我们的<br>理由第三项</a></p>
+        
+        </div>	
+        
+        
+         <div class="kuai4 kuai">
+        
+           <p><a href="#">理由四</a></p>
+        
+        </div>	
+        
+        
+         <div class="kuai5 kuai ">
+        
+            <p><a href="#">理由五</a></p>
+        
+        </div>	
+        
+        <img  src="images/banner2.png">
+        </div>   
+       
+<div class="cenner3  clearfix gWidth" >
+    
+      
+      
+      
+      		<div class="left lt">
+      
+        <h1>
+       <a href="#">留学热点</a><span>Hot Spots</span><a href="#"><img src="images/gengduo.png"></a>
+        <h2> </h2>
+       </h1>
+       
+        <ul class="left2 lt">
+         <li><a href="#">美国 <img src="images/bg.png"></a></li>
+         <li><a href="#">英国 <img src="images/bg.png"></a></li>
+         <li><a href="#">加拿大<img src="images/bg.png"></a></li>
+         <li><a href="#">澳大利亚<img src="images/bg.png"></a></li>
+         <li><a href="#">新西兰<img src="images/bg.png"></a></li>
+          <li><a href="#">韩国<img src="images/bg.png"></a></li>
+         <li><a href="#">日本<img src="images/bg.png"></a></li>
+       </ul>
+       
+        <ul class="left3 lt">
+         <li><a href="#">· 韩国留学要注意哪些禁忌？
+</a></li>
+         <li><a href="#">·韩国语学院的最佳申请时间</a></li>
+         <li class="active">·<a  href="#"> 河北农大韩国留学项目有什么优势？</a></li>
+         <li><a href="#">· 每年举办几次韩国语能力考试？</a></li>
+         <li><a href="#">· 2015年还有两次韩语TOPIK考试的机会 Keep Fighting!!</a></li><li><a href="#">· 2015年韩国留学有什么申请条件？</a></li>
+         <li><a href="#">· 韩国的高等教育介绍</a></li>
+          <li><a href="#">·  韩国的住宿情况是怎样的？</a></li>
+       </ul>
+    
+      
+      
+             </div>
+
+    
+      
+       
+        <div class=" left rt">
+        
+        
+            <h1>
+       <a href="#">最新项目</a><span>Hot Spots</span><a href="#"><img src="images/gengduo.png"></a>
+        <h2> </h2>
+       </h1>
+       
+         <div class="right1">
+        
+         	<div class="lt tu"><img src="images/right1.png"></div>
+            
+            <div class="lt text">
+               <h3>韩国留学要注意哪些禁忌？</h3>
+               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+            
+            </div>
+
+        </div>
+        
+        
+        <div class="right1">
+        
+         	<div class="lt tu"><img src="images/right2.png"></div>
+            
+            <div class="lt text">
+               <h3>韩国留学要注意哪些禁忌？</h3>
+               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+            
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="right1">
+        
+         	<div class="lt tu"><img src="images/right3.png" width="140" height="84"></div>
+            
+            <div class="lt text">
+               <h3>河北农大韩国留学项目有什么优势？</h3>
+               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+            
+            </div>
+
+        </div>
+       
+ </div>
+
+
+</div>
+
+
+
+
+   <div class=" banner3 gWidth"> <a href="#"><img src="images/banner3.png"></a></div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="di2bj">   
+                   
+               <div class="di2 gWidth clearfix" >
+                   
+                   
+                     		
+                        <div class="left lt">
+                  
+                          <h1>
+                   <a href="#">大学</a><span>Hot Spots</span><a href="#"><img src="images/gengduo.png"></a>
+                    <h2> </h2>
+                   </h1>
+                   
+                                               
+                            <ul class="left2 lt">
+                             <li><a href="#">美国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">英国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">加拿大<img src="images/bg.png"></a></li>
+                             <li><a href="#">澳大利亚<img src="images/bg.png"></a></li>
+                             <li><a href="#">新西兰<img src="images/bg.png"></a></li>
+                              <li><a href="#">韩国<img src="images/bg.png"></a></li>
+                             <li><a href="#">日本<img src="images/bg.png"></a></li>
+                           </ul>
+                                       
+                             <ul class="left3 lt">
+                     <li><a href="#">· 韩国留学要注意哪些禁忌？
+            </a></li>
+                     <li><a href="#">·韩国语学院的最佳申请时间</a></li>
+                     <li class="active">·<a  href="#"> 河北农大韩国留学项目有什么优势？</a></li>
+                     <li><a href="#">· 每年举办几次韩国语能力考试？</a></li>
+                     <li><a href="#">· 2015年还有两次韩语TOPIK考试的机会 Keep Fighting!!</a></li><li><a href="#">· 2015年韩国留学有什么申请条件？</a></li>
+                     <li><a href="#">· 韩国的高等教育介绍</a></li>
+                      <li><a href="#">·  韩国的住宿情况是怎样的？</a></li>
+                   </ul>
+                
+                  
+                  
+                         </div>
+                         
+                
+                
+                          <div class="left rt">
+                             
+                            <h1>
+                   <a href="#">研究生</a><span>master</span><a href="#"><img src="images/gengduo.png" ></a>
+                     <h2> </h2>
+                   </h1>
+                                       
+                            <ul class="left2 lt">
+                             <li><a href="#">美国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">英国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">加拿大<img src="images/bg.png"></a></li>
+                             <li><a href="#">澳大利亚<img src="images/bg.png"></a></li>
+                             <li><a href="#">新西兰<img src="images/bg.png"></a></li>
+                              <li><a href="#">韩国<img src="images/bg.png"></a></li>
+                             <li><a href="#">日本<img src="images/bg.png"></a></li>
+                           </ul>
+                     
+                              <ul class="left3 lt">
+                     <li><a href="#">· 韩国留学要注意哪些禁忌？
+            </a></li>
+                     <li><a href="#">·韩国语学院的最佳申请时间</a></li>
+                     <li class="active">·<a  href="#"> 河北农大韩国留学项目有什么优势？</a></li>
+                     <li><a href="#">· 每年举办几次韩国语能力考试？</a></li>
+                     <li><a href="#">· 2015年还有两次韩语TOPIK考试的机会 Keep Fighting!!</a></li><li><a href="#">· 2015年韩国留学有什么申请条件？</a></li>
+                     <li><a href="#">· 韩国的高等教育介绍</a></li>
+                      <li><a href="#">·  韩国的住宿情况是怎样的？</a></li>
+                   </ul>
+                
+                  
+                  
+                          </div>
+                          
+                          
+                          
+                          
+                          
+                          
+                          <div class=" left shang lt">
+        
+                             
+             <h1>
+       <a href="#">语言培训</a><span>Language</span><a href="#"><img src="images/gengduo.png"></a>
+        <h2> </h2>
+       </h1>
+       
+                             
+         <div class="right1">
+        
+       	   <div class="lt tu"><img src="images/right1.png"></div>
+            
+            <div class="lt text">
+               <h3>韩国留学要注意哪些禁忌？</h3>
+               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+            
+            </div>
+
+        </div>
+        
+                             
+                             <div class="right1">
+        
+         	<div class="lt tu"><img src="images/right2.png"></div>
+            
+            <div class="lt text">
+               <h3>韩国留学要注意哪些禁忌？</h3>
+               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+            
+            </div>
+
+        </div>
+        
+        
+        
+                              <div class="right1">
+        
+         	<div class="lt tu"><img src="images/right3.png" width="140" height="84"></div>
+            
+                              <div class="lt text">
+               <h3>河北农大韩国留学项目有什么优势？</h3>
+               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+            
+            </div>
+
+                     </div>
+       
+                         </div>
+
+
+
+                        <div class=" left rt shang">
+        
+                             
+                              <h1>
+                       <a href="#">游学项目</a><span>study tour </span><a href="#"><img src="images/gengduo.png"></a>
+                        <h2> </h2>
+                       </h1>
+                       
+                               <div class="right1">
+                        
+                            <div class="lt tu"><img src="images/right1.png"></div>
+                            
+                            <div class="lt text">
+                               <h3>韩国留学要注意哪些禁忌？</h3>
+                               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+                            
+                            </div>
+                
+                        </div>
+                        
+                               
+                        <div class="right1">
+                        
+                            <div class="lt tu"><img src="images/right2.png"></div>
+                            
+                            <div class="lt text">
+                               <h3>韩国留学要注意哪些禁忌？</h3>
+                               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+                            
+                            </div>
+                
+                        </div>
+                        
+                             <div class="right1">
+                        
+                            <div class="lt tu"><img src="images/right3.png" width="140" height="84"></div>
+                            
+                            <div class="lt text">
+                               <h3>河北农大韩国留学项目有什么优势？</h3>
+                               <p>保定尚美出国留学服务有限公司扎根于河北农业大学，是河北农大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务.....</p>
+                            
+                            </div>
+                
+                        </div>
+                       
+                       </div>
+
+                               
+                               
+                               
+              </div>
+                               
+                   
+   </div>   
+   
+   
+   
+   
+   
+      <div class="banner4 gWidth"> <a href="#"><img src="images/banner4.png"></a></div>
+      
+      
+      
+      <div class="di2 gWidth clearfix" >
+                   
+                   
+                     		
+                        <div class="left lt">
+                  
+                             <h1>
+                   <a href="#">专业选择</a><span>universities</span><a href="#"><img src="images/gengduo.png"></a>
+                    <h2> </h2>
+                   </h1>
+                                       
+                            <ul class="left2 lt">
+                             <li><a href="#">美国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">英国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">加拿大<img src="images/bg.png"></a></li>
+                             <li><a href="#">澳大利亚<img src="images/bg.png"></a></li>
+                             <li><a href="#">新西兰<img src="images/bg.png"></a></li>
+                              <li><a href="#">韩国<img src="images/bg.png"></a></li>
+                             <li><a href="#">日本<img src="images/bg.png"></a></li>
+                           </ul>
+                   
+                             <ul class="left3 lt">
+                     <li><a href="#">· 韩国留学要注意哪些禁忌？
+            </a></li>
+                     <li><a href="#">·韩国语学院的最佳申请时间</a></li>
+                     <li class="active">·<a  href="#"> 河北农大韩国留学项目有什么优势？</a></li>
+                     <li><a href="#">· 每年举办几次韩国语能力考试？</a></li>
+                     <li><a href="#">· 2015年还有两次韩语TOPIK考试的机会 Keep Fighting!!</a></li><li><a href="#">· 2015年韩国留学有什么申请条件？</a></li>
+                     <li><a href="#">· 韩国的高等教育介绍</a></li>
+                      <li><a href="#">·  韩国的住宿情况是怎样的？</a></li>
+                   </ul>
+                
+                  
+                  
+                         </div>
+                         
+                
+                
+                          <div class="left rt">
+                             
+                             <h1>
+                   <a href="#">留学生活</a><span>studylift </span><a href="#"><img src="images/gengduo.png" ></a>
+                     <h2> </h2>
+                   </h1>
+                                       
+                            <ul class="left2 lt">
+                             <li><a href="#">美国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">英国 <img src="images/bg.png"></a></li>
+                             <li><a href="#">加拿大<img src="images/bg.png"></a></li>
+                             <li><a href="#">澳大利亚<img src="images/bg.png"></a></li>
+                             <li><a href="#">新西兰<img src="images/bg.png"></a></li>
+                              <li><a href="#">韩国<img src="images/bg.png"></a></li>
+                             <li><a href="#">日本<img src="images/bg.png"></a></li>
+                           </ul>
+                     
+                              <ul class="left3 lt">
+                     <li><a href="#">· 韩国留学要注意哪些禁忌？
+            </a></li>
+                     <li><a href="#">·韩国语学院的最佳申请时间</a></li>
+                     <li class="active">·<a  href="#"> 河北农大韩国留学项目有什么优势？</a></li>
+                     <li><a href="#">· 每年举办几次韩国语能力考试？</a></li>
+                     <li><a href="#">· 2015年还有两次韩语TOPIK考试的机会 Keep Fighting!!</a></li><li><a href="#">· 2015年韩国留学有什么申请条件？</a></li>
+                     <li><a href="#">· 韩国的高等教育介绍</a></li>
+                      <li><a href="#">·  韩国的住宿情况是怎样的？</a></li>
+                   </ul>
+                
+                  
+                  
+                          </div>
+                          
+                          
+      </div>
+      
+      
+      
+      
+      
+      
+      
+   <div class="di3bj">
+   
+   
+   			<div class="banner5 gWidth"> <a href="#"><img src="images/banner5.png"></a></div>
+   
+   
+   
+            <div class="gWidth left clearfix  di3" >
+            
+            		 <h1><a href="#">留学热点</a></h1>
+                     <div class="gWidth kuang" >
+                   
+                        
+                        <ul>
+                        <a href="#">美国</a><a href="#">英国</a><a href="#">加拿大</a></a><a href="#">澳大利亚</a><a href="#">新西兰</a><a href="#">韩国</a><a href="#">日本</a>
+                        </ul>
+                     <span><a href="#">更多>></a></span>
+                     
+                   </div>
+                   
+                   
+                      <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu1.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                    <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu2.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                        <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu3.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                       <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu4.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                      <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu5.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                          <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu6.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                      <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu7.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                   
+                      <div class="tu1 lt nth">
+                   
+                     <a href="#"><img src="images/tu8.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                   
+                       <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu9.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                      <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu10.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                       <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu11.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                       <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu12.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+ 
+                       <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu13.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                    <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu14.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                     <div class="tu1 lt">
+                   
+                     <a href="#"><img src="images/tu15.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                       <div class="tu1 lt nth">
+                   
+                     <a href="#"><img src="images/tu16.jpg"></a>
+                     <p><a href="#">纽曼大学</a></p>
+                   </div>
+                   
+                   
+                   
+                   
+            </div>
+   
+   
+   </div>
+   
+   
+   
+   <div class="chenggong gWidth">
+     
+     
+      <a href="#"><img src="images/chenggong.png"></a>
+   
+   
+   </div>
+   
+   
+   
+   <div class="gWidth clearfix">
+   
+        <div class="tu2">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+         
+        <div class="tu2">
+   
+           <a href="#"><img class="active" src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+       <div class="tu2">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+       <div class="tu2 nth">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+       
+       <div class="tu2">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+       <div class="tu2">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+       <div class="tu2">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+         <div class="tu2 nth">
+   
+           <a href="#"><img src="images/tu17.jpg"></a>
+           
+           <p><a href="#">美国华盛顿大学张先生</a></p>
+           <p><a href="#">2016-01-15 15:24</a></p>
+       </div>
+       
+       
+       
+       
+   </div>
+    
+    <div class="xueyuan gWidth" ><a href="#">更多成功学员</a></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+ 
+
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZePNG90DKYEhxWlGnT2nnv4Rs4QzMhtT"></script>
+  
+ <div class="ditu"> 
+
+    <!--百度地图容器-->
+    <div class="ditu1" id="map">
+    
+      
+    
+    
+    </div>
+    
+     <div class="ditu2">
+     
+     <center><img src="images/guanyu.png"></center>
+     <p class="jianju"><em>保定尚美出国留学服务有限公司</em>扎根于河北农业大学，是河北农业大学与各国相关高校共同创办的专业机构，专注于各国升学规划指导服务，致力于为国外攻读本科、研究生学历的中国学生提供语言培训服务，使学生达到国外大学的入学语言要求。根据学生自身条件规划留学路线，合理选择与自身条件相适应的国外大学，并提供各种材料申请、签证办理等相关服务。尚美育人，我们用心让教育成为“美”的事业，帮助广大客户轻松完成出国梦。经河北农业大学友好合作院校授权，面向社会招收赴各国深造学士、硕士、博士学位的应往届毕业生。欢迎来电咨询<span>0312-7526058 ；0312-7521187!</span></p>
+     
+     <p >地址：河北省保定市南市区河北农业大学东校区小白楼</p>
+     <p>电话：400-8888-888   邮箱：85208526@qq.com</p>
+     </div>
+     
+     
+</div>
+
+ <div class=" gWidth youqing clearfix">
+ 
+  		<p class="lt">友情连接：</p>
+        <div class="youqing2 lt"><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a><a href="#">保定尚美出国留学服务有限公司</a></div>
+ 
+ 
+ </div>
+ 
+ 
+ <div class="bottombj">
+ 
+   <div class="bottom gWidth clearfix">
+   <img src="images/top.png">
+   
+      
+      
+      
+      
+                		 <div class="nav nav2 clearfix">
+                   <ul>
+                    
+                      <li><a href="#">留学热点<p>Hot Spots</p></a></li>
+    <li class="lala"><a href="#">合作大学<p>University</p></a> </li>
+                      <li><a href="#">留学生活<p>Hot Spots</p> </a></li>
+                      <li><a href="#">留学申请<p>Hot Spots</p></a></li>
+                      <li><a href="#">语言培训<p>Hot Spots</p></a></li>
+                      <li><a href="#">语言培训<p>Hot Spots</p></a></li>
+                      <li><a href="#">关于我们 <p>Hot Spots</p></a></li> 
+                   <li class="ai"><a href="#">联系我们<p>Hot Spots</p></a></li>                   
+                     
+                   </ul>
+                   
+                  
+                </div>
+                
+                
+   </div>
+ 
+ </div>
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(115.489891,38.85584),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+  
+  
+  <div class="bottombj2">
+  
+    <div class="bottom2 gWidth">
+    
+    <p>Copyright@2015-2019保定尚美出国留学服务有限公司 版权所有 冀ICP备0501035号</p>
+    
+    
+    </div>
+  
+  
+  </div>
+
+    
+       <!-- 头部-->
+        <!-- 头部-->
+</body>
+</html>

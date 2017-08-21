@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文章详情页</title>
+<style>
+ul{ list-style:none;}
+a{ text-decoration:none;}
+em{ font-style:normal;}
+img{ border:none; vertical-align:middle;/*图片下方莫名间距*/}
+
+/*请浮动*/
+.clearfix:after{ content:""; display: block; clear:both;}
+.clearfix{ zoom:1;}
+.gWidth{ width:1200px; margin:0 auto;}
+.tit{
+	width:1349px;
+	height:1671px;
+	border:1px solid #003;
+}
+*{ margin:0;padding:0;}
+	 
+.top{ width:100%;}	 
+	 
+	 /**/
+#nowclock{
+	float:left;
+	line-height:35px;
+	width:213px;
+	font:12px ;
+	color:#C0C0C0;
+}
+#nowclock span{ display:none;}
+	.red {
+		color:#C0C0C0;
+		font-weight: bold;
+	}
+	.hei{height:35px;
+		 background-color:#171E28;}
+	.hein li{ float:left; }
+	.hein ul{ float:right;}
+	.hein a{padding:0 7px;
+	      border-right:1px solid #C0C0C0;
+		 font-size:12px; color:#C0C0C0;
+	 line-height:35px;}
+	 .chao{ width:100%; height:101px;background-color:#2B5A99; }
+	 .lf{  width:460px; height:101px;  float:left;}
+	 .lf img{float:left;padding:2px 0 6px 0;}
+	 .lf p{color:#FFFFFF;float:left;margin-top:20px;line-height:23px;text-align:center;font-weight:normal;font-size:12px;}
+	.lf p span{ font-size:24px;font-weight:bold;margin-left:12px;}
+	 .ri{ width:677px; height:101px; float: right;}
+	 .ri p{ color:#C0C0C0; font-size:12px; float:right; margin-top:12px;}
+	 .ri p a{ padding:7px 13px; background-color:#1D4B85; color:#FFF;}
+	 .ri ul{ float:right; margin-top:16px;}
+	 .ri li{ float: left; padding:0 8px; text-align:center;}
+	 .ri li a{color:#FFF;font-weight:bold; font-size:12px;}
+	 .ri li a span{ font-weight:normal; color:#4D76A7; font-size:10px; line-height:22px; text-align:center;}
+	 .banner{ left:0; top:0; float:left; margin-bottom:34px;}
+	 
+	 .q4 a{ color:#000; font-size:12px; margin-right:30px;}
+	 .q4 a:hover{ color:#900; font-weight:bold;}
+	 .q4{ margin-left:30%; margin-top:60px;}
+	 .right{ width:311px; height:1110px; float:left; }
+	 <!---->
+	 .ui{ height:34px; border-bottom:1px solid #D58380;}
+	 .qq ul{ margin:10px 0;}
+	 .qq li{ list-style: initial; font-size:4px; color:#BBBBBC; line-height:28px; margin-left:26px;}
+	 .ui h3{ font-size:14px; line-height:34px;font-weight:bold; float:left; color:#666666;}
+	 .ui a{ float:right; font-size:12px; color:#666666; line-height:34px;}
+	 .qq li{ font-size:14px;}
+	 .qq li a{ color:#656565;}
+	 .qq{ border:1px solid #E3E3E3; margin-top:27px;}
+	 .qw{ height:330px; border:1px solid #E3E3E3; margin-top:15px;}
+	 .ui h3 ,.ui a{margin:0 6px;}
+	 .qww a{ float:right;}
+	 <!---->
+
+	 .as{ width:300px; height:53px; padding:10px 5px; border-bottom:1px dotted #D3D0D0;}
+	 .as img{ width:50px; height:50px; float:left; margin-right:10px; }
+	 .as a{ float:left;width:216px; height:50px; color:#898989;font-size:12px;}
+	 .as a span{ margin-bottom:6px; display: inline-block; font-weight:bold;color:#3E3A39; font-size:12px;}
+	 <!---->
+	 .biao a{ float:left; border:1px solid #CCC; width:102px; height:93px; margin-left:-1px; text-align:center; font-size:13px; color:#666666;}
+	 .biao{ margin-top:20px;}
+	 /*bottom*/
+	 .bottom{ margin-top:160px; height:370px; background-color:#F0F0F0;}
+	 .bottom ul{ float:left; margin-right:46px;}
+	 .zrg{ padding:34px 24px; float:left; width:324px; height:180px; text-align:center; }
+	 .zrg li{ float:left; margin-right:7px; margin-top:24px;}
+	 .zrg_1{ margin-right:10px; float:left;}
+	 .zrg_1 img{ float:left; border:1px solid #666;}
+	 .zlf li h3{ font-size:14px; color:#656565; font-weight:bold;}
+	 .zlf li a{ font-size:14px; color:#656565;}
+	 .zlf li{ line-height:28px;}
+	 .zlf ul{ margin-top:12px; border-right:1px solid #B4B4B4; padding-right:32px; margin-bottom:43px;}
+	 .bot{ height:87px; background-color:#2B5584;}
+	 .bot h3{ float:left;}
+	 .bot li{ float:left;}
+	 .bo{ height:48px; background-color:#171E28;}
+	 .bo li{ float:left;}
+	 .zx h3{ font-size:18px; color:#333333; float:left; width:100px; height:20px;}
+	 .zx li{ float:left; padding-right:34px; line-height:30px;}
+	 .zx ul{float:left; width:1010px; height:auto;}
+	 .zx li a{ font-size:12px; color:#656565;}
+	 .zx{ float:left; border-top:1px solid #999; padding:12px;}
+	 .bot li{ float: left; padding:0 8px; text-align:center;}
+	 .bot li a{color:#FFF;font-weight:bold; font-size:12px;}
+	 .bot li a span{ font-weight:normal; color:#4D76A7; font-size:10px; line-height:22px; text-align:center;}
+	 .qqq{ width:582px; height: auto; margin:0 auto; padding-top:22px;}
+	 .bo p{ line-height:40px; font-size:12px; color:#AFB9C5; margin:0 auto; width:460px;}
+	 /*left*/
+	 .left{ width:826px; height:1110px; float:left;  margin-right:62px;}
+	 .left h4{ color:#666666; font-weight:normal; font-size:14px; padding-bottom:12px; border-bottom:1px solid #2B5B99;}
+	 .left h3{ font-size:18px; color:#656565; text-align:center; margin-top:30px;}
+	 .left h6{ text-align:center; margin-top:22px; color:#CBCBCB; font-size:12px;}
+	 .left img{ margin:32px 0;}
+	 .left h5{ font-size:14px; color:#656565; margin:12px 0;}
+	 .left p{ color:#656565; font-size:14px; line-height:24px;}
+	 .left li{ float:left; margin:0 12px;  margin-top:94px;}
+	 .left ul{ margin-left:292px; text-align:center;}
+	 
+	 
+</style>
+</head>
+<body>
+<div class="top clearfix">
+	<div class="hei ">
+    	<div class="hein gWidth">
+<!--             <div id="nowclock">
+                 <span class="red" >今天是：</span>2010年01月01日 00时00分00秒
+             </div>
+			 <script type="text/javascript">		
+				 function tick(){
+				  var date=new Date()
+				  window.setTimeout("tick()",1000);
+				  nowclock.innerHTML="今天是："+date.toLocaleString();
+				 }
+				  
+				 window.onload=function(){
+					tick();
+				 }
+             </script>-->
+              <ul>
+                <li><a href="#">游学项目</a></li>
+                <li><a href="#">语言培训</a></li>
+                <li><a href="#">专业选择</a></li>
+                <li><a href="#">留学生活</a></li>
+                <li><a href="#">人才招聘</a></li>
+             </ul>
+        </div>
+    </div>
+	<div class="chao clearfix">
+        <div class="gWidth">
+            <div class="lf">
+                <img src="images/logo.png" alt="logo">
+                <p><span>河北农业大学留学服务中心</span><br>
+    OVERSEAS STUDY CONSULTING CENTER OF<br>AGRICUL TURAL UNIVERSITY OF HEBEI
+    			</p>
+            </div>
+            <div class="ri">
+                <p>站内搜索
+                    <input type="text"><a href="#">搜索</a>
+                </p>
+                <ul>
+                    <li><a href="index.html">首页<br><span>News</span></a></li>
+                    <li><a href="tuwen.html">语言培训<br><span>News</span></a></li>
+                    <li><a href="wenzhang.html">最新项目<br><span>About Us</span></a></li>
+                    <li><a href="hezuo.html">留学生活<br><span>About Us</span></a>
+                    <li><a href="anli.html">留学案例<br><span>About Us</span></a></li>
+                    <li><a href="#">留学新闻<br><span>News</span></a></li>
+                    <li><a href="#">关于我们<br><span>About Us</span></a></li>
+                    <li><a href="#">联系我们<br><span>ContactUs</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+        	<img src="images/bannner.png" width="100%">
+        </div>
+    </div>
+    <!--主页-->
+    <div class="zhu gWidth clearfix">
+    	<!--left-->
+        
+        <div class="left">
+        <h4>首页 > 最新项目</h4>
+        <h3>2016美国留学考试时间安排</h3>
+        <h6>来源：河北农大留学      作者：鲁老师      时间：2016-01-28      阅读次数：152</h6>
+        <div align="center"><img src="images/no3-1.gif" alt="" ></div> 
+        <h5>特殊的留学操作方案</h5>
+        <p>&nbsp;&nbsp;第一次见学生及家长的时候， 我们就对学生的情况做了全面的了解和分析，学生及家长都了解学生目前的现状：学生大一的GPA太低了，这个是不可更改的事实。又由于时间紧迫，学生已不能再耽搁时间了(学生从2013年6月份回国后，一直到现在都在国内)。所以目前我们面临的问题是：时间紧，困难大。<br><br>
+　　为争取时间，我们第一次见面就先让学生及家长明确了各自的任务：<br><br>
+　　学生：准备托福;联系美国学校，沟通美国成绩单及推荐人的事宜;配合我们做文书素材的搜集及挖掘。<br><br>
+　　家长：准备存款证明;帮助孩子准备高中的成绩单;开具医院的"甲亢超标"的相关证明及"身体康复"的证明。<br><br>
+　　与此同时，我们这边"两种方案"同时展开：<br><br>
+　　方案一：就学生之前申请freshmen时，录取的那几所学校，做针对性套磁，跟学校说明自身情况，询问可否转到他们学校去(当然，具体的套磁细节是需要沟通技巧的，这里就不多说了。)<br><br>
+　　方案二，根据学生目前的情况及对学校的要求，重新给学生调研学校，做定校前的前期套磁工作。<br><br>
+　　但是，大多数学校的回复都不是很乐观，主要就是大一GPA太低了，有的学校建议先转到社区大学，GPA达到2.5以上再去申请他们学校，尤其是方案一中的几所学校，没有一所学校愿意接收的。<br><br>
+　　不过，皇天不负有心人，方案二中的学校终于有几所的回复还是比较乐观的，于是，我们马上对这几所学校做申请前的准备工作， 在文书方面为学生做足了准备，把学生的优势都展现在文书中，万事俱备，只欠东风，待学生新的托福成绩一出来我们就递交申请.</p>
+       
+        <ul>
+            	<li><a href="#">首页</a></li>
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">下一刻</a></li>
+                <li><a href="#">尾页</a></li>
+            
+            </ul>
+        
+         </div>
+        
+        
+        <!--right-->
+        <div class="right">
+        	<img src="images/no2-1.gif" alt="服务中心">
+            <div class="qq">
+                <div class="ui">
+                    <h3>&nbsp;阅读排行</h3>
+                    <a href="#">我要申请&nbsp;<img src="images/xlogo.gif" alt="logo">&nbsp;&nbsp;</a>
+                </div>
+                <ul>
+                	<li><a href="#">2016年美国留学考试时间表</a></li>
+                    <li><a href="#">2016年美国留学年美国考试时间表</a></li>
+                    <li><a href="#">2016年留学考试时间表  </a></li>
+                    <li><a href="#">2016年美国留学考试时间表  </a></li>
+                    <li><a href="#">2016年美年美国年美国国留学考试时间表  </a></li>
+                    <li><a href="#">2016年美国留学考试时间表  </a></li>
+                    <li><a href="#">2016年美国年美国考试时间表  </a></li>
+                    <li><a href="#">2016年美国年美国留学考试时间表  </a></li>
+                    <li><a href="#">2016年美国留学考试时间表  </a></li>
+                    <li><a href="#">2016年美国留学考试时间表  </a></li>
+                </ul>
+            </div> 
+            <!---->
+                <div class="qw">
+                    <div class="ui">
+                        <h3>最新案例</h3>
+                        <a href="#">我要申请<img src="images/xlogo.gif"></a>
+                    </div>
+                    <ul>
+                        <li><div class="as clearfix">
+                            <img src="images/no2-2.gif">
+                            <a href="#"><span>2016年美国本科申请全攻略</span><br>哈佛,耶鲁，哥伦比亚,斯坦福独家申请攻略</a>
+    </div></li>
+                        <li><div class="as clearfix">
+                                                <img src="images/no2-2.gif">
+                                                <a href="#"><span>2016年美国本科申请全攻略</span><br>哈佛,耶鲁，哥伦比亚,斯坦福独家申请攻略</a>
+                        </div></li>
+                        <li><div class="as clearfix">
+                                                <img src="images/no2-2.gif">
+                                                <a href="#"><span>2016年美国本科申请全攻略</span><br>哈佛,耶鲁，哥伦比亚,斯坦福独家申请攻略</a>
+                        </div></li>
+                        <li><div class="as clearfix">
+                                                <img src="images/no2-2.gif">
+                                                <a href="#"><span>2016年美国本科申请全攻略</span><br>哈佛,耶鲁，哥伦比亚,斯坦福独家申请攻略</a>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="biao">
+                	<a href="#"><img src="images/no2-6.gif"><br><p>留学新闻</p></a>
+                    <a href="#"><img src="images/no2-7.gif"><br><p>语言培训</p></a>
+                    <a href="#"><img src="images/no2-8.gif"><br><p>在线咨询</p></a>
+                    <a href="#"><img src="images/no2-9.gif"><br><p>合作院校</p></a>
+                    <a href="#"><img src="images/no2-10.gif"><br><p>考试日历</p></a>
+                    <a href="#"><img src="images/no2-11.gif"><br><p>成功学院</p></a>
+                </div>
+        </div>
+    </div>
+    
+    <!---->
+    <div class="bottom">
+    	<div class=" gWidth">
+        	<div class="zlf">
+                <ul>
+                    <li><h3>留学热点</h3></li>
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">英国</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">韩国</a></li>
+                    <li><a href="#">日本</a></li>
+                </ul>
+                <ul>
+                    <li><h3>专业选择</h3></li>
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">英国</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">韩国</a></li>
+                    <li><a href="#">日本</a></li>
+                </ul>
+                <ul>
+                    <li><h3>留学生活</h3></li>
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">英国</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">韩国</a></li>
+                    <li><a href="#">日本</a></li>
+                </ul>
+                <ul>
+                    <li><h3>合作院校</h3></li>
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">英国</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">韩国</a></li>
+                    <li><a href="#">日本</a></li>
+                </ul>
+                <ul>
+                    <li><h3>大学</h3></li>
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">英国</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">韩国</a></li>
+                    <li><a href="#">日本</a></li>
+                </ul>
+                <ul>
+                    <li><h3>研究生</h3></li>
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">英国</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">韩国</a></li>
+                    <li><a href="#">日本</a></li>
+                </ul>
+            </div>
+            <div class="zrg clearfix">
+            	<div class="zrg_1">
+                	<img src="images/no2-12.gif" alt="移动官网"><br><br><br><br><br><h4>移动官网</h4>
+                </div>
+                <div class="zrg_1">
+                	<img src="images/no2-13.gif" alt="微信公众号"><br><br><br><br><br><h4>微信公众号</h4>
+                </div>
+                <div class="zrg_1">
+                	<img src="images/no2-14.gif" alt="加微信好友"><br><br><br><br><br><h4>加微信好友</h4>
+                </div> 
+                <ul>
+                	<li>分享到：</li>
+                    <li><a href="#"><img src="images/no2-15.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-16.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-17.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-18.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-19.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-20.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-21.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-22.gif"></a></li>
+                    <li><a href="#"><img src="images/no2-23.gif"></a></li>
+                </ul> 
+                
+            </div>
+            <div class="zx clearfix">
+				<h3>友情链接 : </h3>
+            	<ul>
+            		<li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+                    <li><a href="#">保定尚美出国留学服务有限公司</a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+    	<div class="gWidth qqq">
+        	<ul>
+            	<li><a href="#">留学热点<br><span>Hot Spots</span></a></li>
+           	    <li><a href="#">合作大学<br><span>University</span></a></li>
+                <li><a href="#">留学生活<br><span>Study LIfe</span></a></li>
+                <li><a href="#">留学申请<br><span>Application</span></a></li>
+                <li><a href="#">语言培训<br><span>Language</span></a></li>
+                <li><a href="#">留学新闻<br><span>News</span></a></li>
+                <li><a href="#">关于我们<br><span>About Us</span></a></li>
+                <li><a href="#">联系我们<br><span>ContactUs</span></a></li>
+           </ul>
+            
+        </div>
+    </div>
+    <div class="bo">
+    	<div class="gWidth">
+        	<p>Copyright@2015-2019保定尚美出国留学服务有限公司 版权所有 冀ICP备0501035号</p>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
